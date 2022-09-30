@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagin Color Palette</title>
+  </head>
+  <body>
+    <button class="demo no-change">Demo</button>
+    <!-- Tools Panel -->
+    <div class="panel no-change hide">
+      <div class="targetColor" style="transform: translate(5%, 10%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          width="60%"
+          height="60%"
+        >
+          <style>
+            .ttt {
+              font: bold 24px sans-serif;
+              text-align: center;
+            }
+          </style>
+          <text x="0" y="60" class="ttt">no color</text>
+        </svg>
+      </div>
+      <div class="tool no-change" style="transform: translate(190%, 10%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="out"
+          viewBox="0 0 512 512"
+          width="50%"
+          height="50%"
+          fill="#323232"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="tool no-change" style="transform: translate(195%, 115%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="palete"
+          width="50%"
+          height="50%"
+          class="bi bi-palette-fill"
+          viewBox="0 0 16 16"
+          fill="#323232"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="tool no-change" style="transform: translate(130%, 195%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="drop"
+          viewBox="0 0 384 512"
+          width="50%"
+          height="50%"
+          fill="#323232"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="tool no-change" style="transform: translate(25%, 215%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="dropper"
+          viewBox="0 0 512 512"
+          width="50%"
+          height="50%"
+          fill="#323232"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="par no-change" style="transform: translate(360%, 100%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="borderColor"
+          width="50%"
+          height="50%"
+          fill="#323232"
+          viewBox="0 0 16 16"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="par no-change" style="transform: translate(390%, 210%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="background"
+          width="50%"
+          height="50%"
+          fill="#323232"
+          viewBox="0 0 16 16"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="par no-change" style="transform: translate(345%, 315%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="color"
+          width="50%"
+          height="50%"
+          fill="#323232"
+          viewBox="0 0 16 16"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="par no-change" style="transform: translate(250%, 380%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="fill"
+          width="50%"
+          height="50%"
+          fill="#323232"
+          viewBox="0 0 576 512"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+      <div class="par no-change" style="transform: translate(135%, 375%)">
+        <svg
+          class="no-change"
+          xmlns="http://www.w3.org/2000/svg"
+          id="stroke"
+          width="50%"
+          height="50%"
+          fill="#323232"
+          viewBox="0 0 512 512"
+        >
+          <path class="no-change" />
+        </svg>
+      </div>
+    </div>
+    <!-- Colors Panel -->
+    <div class="paletepanel no-change hide">
+      <div class="rgb">
+        <input type="number" id="red" value="255" />
+        <input type="number" id="green" value="255" />
+        <input type="number" id="blue" value="255" />
+      </div>
+      <div class="grad no-change">
+        <div class="gradcaret"></div>
+      </div>
+      <div class="intensity no-change">
+        <div class="celic"></div>
+        <div class="bg bg1"></div>
+        <div class="bg bg2"></div>
+      </div>
+    </div>
+    <!-- Example blocks -->
+    <div class="block img"></div>
+    <div class="block">
+      <svg xmlns="http://www.w3.org/2000/svg" id="voron" viewBox="0 0 640 512">
+        <path />
+      </svg>
+    </div>
+    <div class="block">
+      <div class="cart">
+        <ol>
+          <li>HEllO URER</li>
+          <li>HOW ARE YOU?</li>
+          <li>GOOD DAY</li>
+          <li>MY FRIEND</li>
+          <li>YOU NAME</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
